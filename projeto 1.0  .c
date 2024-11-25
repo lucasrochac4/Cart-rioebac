@@ -93,7 +93,7 @@ int exclusao()
 {
 	system("cls");
 	printf("Digite o nome do usário desejado: \n");
-	system("pause");
+	system("pause ");
 }
 
 int main()
@@ -112,8 +112,9 @@ int main()
 	  printf("Selecione a opção desejada: \n\n");
 	  printf("\t1- Incluir Usuário \n");
 	  printf("\t2- Consultar Usuário \n");
-	  printf("\t3- Excluir Usuário \n\n"); 
-	  printf("Digite a opção desejada: "); //fim do menu
+	  printf("\t3- Excluir Usuário \n"); 
+	  printf("\t4- Sair do sistema \n\n");
+	  printf("Digite a opção desejada: \n"); //fim do menu
 	
 	  scanf("%d", &opcao); //armazenando a escolha do usuário
 	  
@@ -132,6 +133,12 @@ int main()
 		case 3:
 		exclusao();
 		break;
+		
+		case 4:
+		printf("Obrigado por utilizar nosso sistema!\n");
+		return 0;
+		break;	
+		
 		
 		default:
 		printf("Digite uma opção valida\n"); //fim da seleção
